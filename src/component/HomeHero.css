@@ -1,0 +1,39 @@
+/* HomeHero.css */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  /* Animation for the image */
+
+  
+  .animated-image {
+    animation: imgRotate 50s linear infinite;
+  }
+  
+  .custom-btn {
+    background-color: #ff6b6b !important;
+    border-color: #ff6b6b !important;
+    letter-spacing: 1px;
+  }
+  
+  .hero-section {
+    position: relative;
+  }
+  
+  /* Add media queries for responsive adjustments */
+  @media (max-width: 992px) {
+    .hero-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    
+    .display-4 {
+      font-size: 2.5rem;
+    }
+  }
+  
